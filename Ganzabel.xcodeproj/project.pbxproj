@@ -35,14 +35,14 @@
 			path = Ganzabel;
 			sourceTree = "<group>";
 		};
-		19DA31802E0DDE6100BD0845 /* GanzabelTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GanzabelTests;
-			sourceTree = "<group>";
-		};
 		19DA318A2E0DDE6100BD0845 /* GanzabelUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GanzabelUITests;
+			sourceTree = "<group>";
+		};
+		19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GanzabelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,9 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				19DA316D2E0DDE6000BD0845 /* Ganzabel */,
-				19DA31802E0DDE6100BD0845 /* GanzabelTests */,
 				19DA318A2E0DDE6100BD0845 /* GanzabelUITests */,
 				19DA316C2E0DDE6000BD0845 /* Products */,
+				19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,9 +130,6 @@
 			dependencies = (
 				19DA317F2E0DDE6100BD0845 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				19DA31802E0DDE6100BD0845 /* GanzabelTests */,
-			);
 			name = GanzabelTests;
 			packageProductDependencies = (
 			);
@@ -155,6 +152,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				19DA318A2E0DDE6100BD0845 /* GanzabelUITests */,
+				19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */,
 			);
 			name = GanzabelUITests;
 			packageProductDependencies = (
@@ -400,11 +398,13 @@
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +412,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Asser.Ganzabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,11 +432,13 @@
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +446,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Asser.Ganzabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
