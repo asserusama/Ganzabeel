@@ -29,20 +29,23 @@
 		19DA31872E0DDE6100BD0845 /* GanzabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanzabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		196CD5642E1007EA00314A3C /* Exceptions for "Ganzabel" folder in "Ganzabel" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 19DA316A2E0DDE6000BD0845 /* Ganzabel */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		19DA316D2E0DDE6000BD0845 /* Ganzabel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				196CD5642E1007EA00314A3C /* Exceptions for "Ganzabel" folder in "Ganzabel" target */,
+			);
 			path = Ganzabel;
-			sourceTree = "<group>";
-		};
-		19DA318A2E0DDE6100BD0845 /* GanzabelUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GanzabelUITests;
-			sourceTree = "<group>";
-		};
-		19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GanzabelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,9 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				19DA316D2E0DDE6000BD0845 /* Ganzabel */,
-				19DA318A2E0DDE6100BD0845 /* GanzabelUITests */,
 				19DA316C2E0DDE6000BD0845 /* Products */,
-				19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,10 +150,6 @@
 			);
 			dependencies = (
 				19DA31892E0DDE6100BD0845 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				19DA318A2E0DDE6100BD0845 /* GanzabelUITests */,
-				19DA31AF2E0DEA4D00BD0845 /* GanzabelTests */,
 			);
 			name = GanzabelUITests;
 			packageProductDependencies = (
@@ -398,12 +395,13 @@
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ganzabel/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,12 +430,13 @@
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ganzabel/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
