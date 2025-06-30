@@ -111,11 +111,12 @@
 				19DA31672E0DDE6000BD0845 /* Sources */,
 				19DA31682E0DDE6000BD0845 /* Frameworks */,
 				19DA31692E0DDE6000BD0845 /* Resources */,
+				19C291012E1222520090D29D /* SwiftLint */,
+				19C2910F2E122B2E0090D29D /* SwiftGen */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				19A0DEC82E1209FE00D4C61F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				19DA316D2E0DDE6000BD0845 /* Ganzabel */,
@@ -200,7 +201,6 @@
 			mainGroup = 19DA31622E0DDE6000BD0845;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 19DA316C2E0DDE6000BD0845 /* Products */;
@@ -238,6 +238,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19C291012E1222520090D29D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.swiftlint.yml",
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFTLINT_PATH=\"/opt/homebrew/bin/swiftlint\"\n\nif [ -f \"$SWIFTLINT_PATH\" ]; then\n  \"$SWIFTLINT_PATH\"\nelse\n  echo \"warning: SwiftLint not installed. Download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19C2910F2E122B2E0090D29D /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen config run --config \"${SRCROOT}/AssetKit/swiftgen.yml\"\nelse\n  echo \"warning: SwiftGen not installed. Install via Homebrew or include in project.\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19DA31672E0DDE6000BD0845 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -263,10 +307,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19A0DEC82E1209FE00D4C61F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 19A0DEC72E1209FE00D4C61F /* SwiftLintBuildToolPlugin */;
-		};
 		19DA317F2E0DDE6100BD0845 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 19DA316A2E0DDE6000BD0845 /* Ganzabel */;
@@ -410,6 +450,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ganzabel/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -445,6 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59N9JDT3LK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ganzabel/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -583,25 +625,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.59.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		19A0DEC72E1209FE00D4C61F /* SwiftLintBuildToolPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19DA31632E0DDE6000BD0845 /* Project object */;
 }
