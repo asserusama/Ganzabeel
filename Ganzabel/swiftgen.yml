@@ -1,0 +1,10 @@
+xcassets:
+   inputs:
+     - Ganzabel/Resources/Assets.xcassets
+   outputs:
+     - templateName: swift5
+       params:
+         publicAccess: true
+         forceProvidesNamespaces: true
+         enumName: XCAssetsGenerated
+       output: XCAssetsGenerated.swift
