@@ -2,13 +2,13 @@ import SwiftUI
 
 struct OnboardingView: View {
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             ZStack {
                 GradientBG()
-                VStack{
+                VStack {
                     Image("bg-question")
                         .padding(.bottom, 100)
-                    VStack{
+                    VStack {
                         Text("كازينو الالعاب")
                             .font(Font.titleText)
                             .bold()
@@ -20,18 +20,13 @@ struct OnboardingView: View {
 
                     }
                     .frame(width: 330, height: 230)
-                    .background{
+                    .background {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color.white)
                             .shadow(radius: 5)
                     }
-
-
                 }
-                Button(action: {}) {
                     Image("ic-next")
-                }
-
                 .padding(.top, 630)
             }
 

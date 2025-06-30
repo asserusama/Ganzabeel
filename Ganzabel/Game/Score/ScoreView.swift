@@ -36,7 +36,6 @@ struct ScoreView: View {
     ScoreView()
 }
 
-
 struct ScoreRowView: View {
     var text: String
     var score: Int
@@ -67,4 +66,3 @@ struct ScoreRowView: View {
         .font(.titleText)
     }
 }
-

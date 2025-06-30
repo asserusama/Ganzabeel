@@ -75,10 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19A0DEC52E12058300D4C61F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		19DA31622E0DDE6000BD0845 = {
 			isa = PBXGroup;
 			children = (
 				19DA316D2E0DDE6000BD0845 /* Ganzabel */,
+				19A0DEC52E12058300D4C61F /* Frameworks */,
 				19DA316C2E0DDE6000BD0845 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				19A0DEC82E1209FE00D4C61F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				19DA316D2E0DDE6000BD0845 /* Ganzabel */,
@@ -190,6 +199,9 @@
 			);
 			mainGroup = 19DA31622E0DDE6000BD0845;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 19DA316C2E0DDE6000BD0845 /* Products */;
 			projectDirPath = "";
@@ -251,6 +263,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		19A0DEC82E1209FE00D4C61F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 19A0DEC72E1209FE00D4C61F /* SwiftLintBuildToolPlugin */;
+		};
 		19DA317F2E0DDE6100BD0845 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 19DA316A2E0DDE6000BD0845 /* Ganzabel */;
@@ -567,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.59.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19A0DEC72E1209FE00D4C61F /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19A0DEC62E1209D900D4C61F /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19DA31632E0DDE6000BD0845 /* Project object */;
 }

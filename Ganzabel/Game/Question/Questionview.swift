@@ -41,36 +41,3 @@ struct GameViewUI: View {
 #Preview {
     GameViewUI()
 }
-
-//VStack {
-//    Text("اسر داس الاول")
-//        .padding()
-//
-//    Image("ic-image")
-//        .resizable()
-//        .scaledToFit()
-//        .frame(width: 100, height: 100)
-//        .padding()
-//
-//    Text("3 ثواني")
-//}
-//.font(.titleText)
-//.foregroundStyle(.white)
-//.padding(.bottom, 170)
-//
-//VStack {
-//    Image("ic-image")
-//
-//    Text("تصويت")
-//        .font(.titleText)
-//        .foregroundStyle(.white)
-//        .padding()
-//
-//    VStack {
-//        Image("ic-correct")
-//        Image("ic-wrong")
-//    }
-//}
-//.font(.titleText)
-//.foregroundStyle(.white)
-//}

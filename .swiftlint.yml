@@ -1,0 +1,10 @@
+opt_in_rules:
+
+- file_header
+
+disabled_rules:
+
+- trailing_whitespace
+
+file_header:
+  forbidden_string: "Created by"

@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct WinnerView: View {
-
     var body: some View {
         ZStack {
             GradientBG()
@@ -52,4 +51,3 @@ struct WinnerView: View {
 #Preview {
     WinnerView()
 }
-
